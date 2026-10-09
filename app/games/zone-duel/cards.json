@@ -1,0 +1,91 @@
+{
+  "cards": [
+    {
+      "id": "zd-dragon-whelp",
+      "name": "Dragon Whelp",
+      "type": "monster",
+      "stats": {
+        "level": 3,
+        "atk": 1200,
+        "def": 1000
+      },
+      "model": {
+        "scale": 1.0
+      },
+      "image": "cards/zd-dragon-whelp.png",
+      "target": 0,
+      "art": {
+        "hue": 0,
+        "view": 0
+      },
+      "text": [
+        "A hatchling that guards",
+        "its first hoard fiercely."
+      ]
+    },
+    {
+      "id": "zd-ember-drake",
+      "name": "Ember Drake",
+      "type": "monster",
+      "stats": {
+        "level": 5,
+        "atk": 2000,
+        "def": 1500
+      },
+      "model": {
+        "scale": 1.25,
+        "hue": -110
+      },
+      "image": "cards/zd-ember-drake.png",
+      "target": 1,
+      "art": {
+        "hue": -110,
+        "view": 1
+      },
+      "text": [
+        "Requires 1 tribute.",
+        "Its breath melts stone."
+      ]
+    },
+    {
+      "id": "zd-elder-wyrm",
+      "name": "Elder Wyrm",
+      "type": "monster",
+      "stats": {
+        "level": 7,
+        "atk": 2600,
+        "def": 2200
+      },
+      "model": {
+        "scale": 1.6,
+        "hue": 120
+      },
+      "image": "cards/zd-elder-wyrm.png",
+      "target": 2,
+      "art": {
+        "hue": 120,
+        "view": 3
+      },
+      "text": [
+        "Requires 2 tributes.",
+        "Older than the mountains."
+      ]
+    },
+    {
+      "id": "zd-dragon-hoard",
+      "name": "Dragon's Hoard",
+      "type": "spell",
+      "stats": {},
+      "image": "cards/zd-dragon-hoard.png",
+      "target": 3,
+      "art": {
+        "hue": 40,
+        "view": 2
+      },
+      "text": [
+        "Spell. Place in a spell zone.",
+        "Glitters until played."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "cards": [
+    {
+      "id": "ygo-88819587",
+      "name": "Baby Dragon",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "88819587",
+        "level": 3,
+        "atk": 1200,
+        "def": 700,
+        "attribute": "WIND",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 0.8,
+        "hue": 20
+      }
+    },
+    {
+      "id": "ygo-87796900",
+      "name": "Winged Dragon, Guardian of the Fortress #1",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "87796900",
+        "level": 4,
+        "atk": 1400,
+        "def": 1200,
+        "attribute": "WIND",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 1.0,
+        "hue": 60
+      }
+    },
+    {
+      "id": "ygo-91152256",
+      "name": "Celtic Guardian",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "91152256",
+        "level": 4,
+        "atk": 1400,
+        "def": 1200,
+        "attribute": "EARTH",
+        "race": "Warrior"
+      },
+      "model": {
+        "scale": 1.0,
+        "placeholder": true
+      }
+    },
+    {
+      "id": "ygo-15025844",
+      "name": "Mystical Elf",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "15025844",
+        "level": 4,
+        "atk": 800,
+        "def": 2000,
+        "attribute": "LIGHT",
+        "race": "Spellcaster"
+      },
+      "model": {
+        "scale": 1.0,
+        "placeholder": true
+      }
+    },
+    {
+      "id": "ygo-28279543",
+      "name": "Curse of Dragon",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "28279543",
+        "level": 5,
+        "atk": 2000,
+        "def": 1500,
+        "attribute": "DARK",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 1.2,
+        "hue": -60
+      }
+    },
+    {
+      "id": "ygo-70781052",
+      "name": "Summoned Skull",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "70781052",
+        "level": 6,
+        "atk": 2500,
+        "def": 1200,
+        "attribute": "DARK",
+        "race": "Fiend"
+      },
+      "model": {
+        "scale": 1.0,
+        "placeholder": true
+      }
+    },
+    {
+      "id": "ygo-74677422",
+      "name": "Red-Eyes Black Dragon",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "74677422",
+        "level": 7,
+        "atk": 2400,
+        "def": 2000,
+        "attribute": "DARK",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 1.45,
+        "hue": -130
+      }
+    },
+    {
+      "id": "ygo-46986414",
+      "name": "Dark Magician",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "46986414",
+        "level": 7,
+        "atk": 2500,
+        "def": 2100,
+        "attribute": "DARK",
+        "race": "Spellcaster"
+      },
+      "model": {
+        "scale": 1.0,
+        "placeholder": true
+      }
+    },
+    {
+      "id": "ygo-89631139",
+      "name": "Blue-Eyes White Dragon",
+      "type": "monster",
+      "frame": "normal",
+      "stats": {
+        "passcode": "89631139",
+        "level": 8,
+        "atk": 3000,
+        "def": 2500,
+        "attribute": "LIGHT",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 1.6,
+        "hue": 95
+      }
+    },
+    {
+      "id": "ygo-41462083",
+      "name": "Thousand Dragon",
+      "type": "extra-monster",
+      "frame": "fusion",
+      "stats": {
+        "passcode": "41462083",
+        "level": 7,
+        "atk": 2400,
+        "def": 2000,
+        "attribute": "WIND",
+        "race": "Dragon"
+      },
+      "model": {
+        "scale": 1.5,
+        "hue": 35
+      }
+    },
+    {
+      "id": "ygo-55144522",
+      "name": "Pot of Greed",
+      "type": "spell",
+      "frame": "spell",
+      "stats": {
+        "passcode": "55144522",
+        "race": "Normal"
+      }
+    },
+    {
+      "id": "ygo-83764718",
+      "name": "Monster Reborn",
+      "type": "spell",
+      "frame": "spell",
+      "stats": {
+        "passcode": "83764718",
+        "race": "Normal"
+      }
+    },
+    {
+      "id": "ygo-05318639",
+      "name": "Mystical Space Typhoon",
+      "type": "spell",
+      "frame": "spell",
+      "stats": {
+        "passcode": "05318639",
+        "race": "Quick-Play"
+      }
+    },
+    {
+      "id": "ygo-59197169",
+      "name": "Yami",
+      "type": "field-spell",
+      "frame": "spell",
+      "stats": {
+        "passcode": "59197169",
+        "race": "Field"
+      }
+    },
+    {
+      "id": "ygo-04206964",
+      "name": "Trap Hole",
+      "type": "trap",
+      "frame": "trap",
+      "stats": {
+        "passcode": "04206964",
+        "race": "Normal"
+      }
+    },
+    {
+      "id": "ygo-44095762",
+      "name": "Mirror Force",
+      "type": "trap",
+      "frame": "trap",
+      "stats": {
+        "passcode": "44095762",
+        "race": "Normal"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "zone-duel",
+  "name": "Zone Duel",
+  "version": 1,
+  "defaultModel": "../../assets/dragon_whelp.glb",
+  "targets": "targets.mind",
+  "board": {
+    "width": 0.62,
+    "depth": 0.32,
+    "theme": {
+      "fill": [
+        "#14283c",
+        "#0a141e"
+      ],
+      "edge": "#d6ac40",
+      "kinds": {
+        "monster": "#ff9b5c",
+        "spell": "#6cc6ff"
+      }
+    },
+    "zones": [
+      {
+        "id": "M1",
+        "kind": "monster",
+        "x": -0.2,
+        "z": -0.07
+      },
+      {
+        "id": "M2",
+        "kind": "monster",
+        "x": -0.1,
+        "z": -0.07
+      },
+      {
+        "id": "M3",
+        "kind": "monster",
+        "x": 0.0,
+        "z": -0.07
+      },
+      {
+        "id": "M4",
+        "kind": "monster",
+        "x": 0.1,
+        "z": -0.07
+      },
+      {
+        "id": "M5",
+        "kind": "monster",
+        "x": 0.2,
+        "z": -0.07
+      },
+      {
+        "id": "S1",
+        "kind": "spell",
+        "x": -0.2,
+        "z": 0.075
+      },
+      {
+        "id": "S2",
+        "kind": "spell",
+        "x": -0.1,
+        "z": 0.075
+      },
+      {
+        "id": "S3",
+        "kind": "spell",
+        "x": 0.0,
+        "z": 0.075
+      },
+      {
+        "id": "S4",
+        "kind": "spell",
+        "x": 0.1,
+        "z": 0.075
+      },
+      {
+        "id": "S5",
+        "kind": "spell",
+        "x": 0.2,
+        "z": 0.075
+      }
+    ]
+  },
+  "cardFields": {
+    "level": {
+      "types": [
+        "monster"
+      ],
+      "label": "Level"
+    },
+    "atk": {
+      "types": [
+        "monster"
+      ],
+      "label": "ATK"
+    },
+    "def": {
+      "types": [
+        "monster"
+      ],
+      "label": "DEF"
+    }
+  },
+  "rules": {
+    "life": {
+      "name": "LP",
+      "starting": 8000
+    },
+    "deck": {
+      "startingHand": 4,
+      "drawPerTurn": 1
+    },
+    "turn": {
+      "playsPerTurn": {
+        "monster": 1
+      }
+    },
+    "zones": {
+      "monster": {
+        "accepts": [
+          "monster"
+        ]
+      },
+      "spell": {
+        "accepts": [
+          "spell",
+          "trap"
+        ]
+      }
+    },
+    "summonCost": {
+      "tributes": {
+        "stat": "level",
+        "tiers": [
+          {
+            "min": 5,
+            "count": 1
+          },
+          {
+            "min": 7,
+            "count": 2
+          }
+        ]
+      }
+    },
+    "summoningSickness": false
+  },
+  "cardStyle": {
+    "frame": "#d6ac40",
+    "bg": "#3a2a14",
+    "typeLine": "{type} - Level {level}",
+    "statLine": "ATK {atk} / DEF {def}",
+    "gemsStat": "level",
+    "gemColor": "#e8b23a"
+  },
+  "creatureTypes": [
+    "monster"
+  ]
+}

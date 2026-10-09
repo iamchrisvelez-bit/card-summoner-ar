@@ -1,0 +1,96 @@
+{
+  "cards": [
+    {
+      "id": "mc-hatchling",
+      "name": "Hatchling",
+      "type": "creature",
+      "stats": {
+        "cost": 1,
+        "power": 1,
+        "toughness": 1
+      },
+      "model": {
+        "scale": 0.75,
+        "hue": 30
+      },
+      "image": "cards/mc-hatchling.png",
+      "target": 0,
+      "art": {
+        "hue": 30,
+        "view": 2
+      },
+      "text": [
+        "Small, but it bites."
+      ]
+    },
+    {
+      "id": "mc-dragon-whelp",
+      "name": "Dragon Whelp",
+      "type": "creature",
+      "stats": {
+        "cost": 2,
+        "power": 2,
+        "toughness": 2
+      },
+      "model": {
+        "scale": 1.0
+      },
+      "image": "cards/mc-dragon-whelp.png",
+      "target": 1,
+      "art": {
+        "hue": 0,
+        "view": 0
+      },
+      "text": [
+        "Flying."
+      ]
+    },
+    {
+      "id": "mc-ember-drake",
+      "name": "Ember Drake",
+      "type": "creature",
+      "stats": {
+        "cost": 4,
+        "power": 4,
+        "toughness": 3
+      },
+      "model": {
+        "scale": 1.25,
+        "hue": -110
+      },
+      "image": "cards/mc-ember-drake.png",
+      "target": 2,
+      "art": {
+        "hue": -110,
+        "view": 1
+      },
+      "text": [
+        "Flying. Haste is for",
+        "lesser dragons."
+      ]
+    },
+    {
+      "id": "mc-elder-wyrm",
+      "name": "Elder Wyrm",
+      "type": "creature",
+      "stats": {
+        "cost": 6,
+        "power": 6,
+        "toughness": 6
+      },
+      "model": {
+        "scale": 1.6,
+        "hue": 120
+      },
+      "image": "cards/mc-elder-wyrm.png",
+      "target": 3,
+      "art": {
+        "hue": 120,
+        "view": 3
+      },
+      "text": [
+        "Flying. Ancient."
+      ]
+    }
+  ]
+}

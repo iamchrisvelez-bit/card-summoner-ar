@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Card Summoner AR</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/three.module.js",
+      "three/addons/": "./vendor/three/addons/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="ar"></div>
+
+  <section id="intro" class="panel">
+    <h1>Card Summoner AR</h1>
+    <label class="field">
+      <span class="small">Game</span>
+      <select id="game"></select>
+    </label>
+    <p id="game-summary" class="small"></p>
+    <p class="small"><a id="print-cards" href="cards.html" target="_blank">Print this game's cards</a>
+      (or show them on another screen).</p>
+    <hr>
+    <div id="xr-block" class="hidden">
+      <p><b>On Meta Quest:</b> enter mixed reality, place the duel board on your table, pick a card from
+        your hand and summon it into a zone. The game's rules decide what is allowed.</p>
+      <button id="enter-xr" class="primary">Enter mixed reality</button>
+      <label class="small check"><input id="watch-cards" type="checkbox"> Watch for real cards with the headset camera (experimental)</label>
+      <hr>
+    </div>
+    <p><b>On a phone:</b> lay a card flat on a table, start the camera and point your phone at it.
+      Its monster is summoned onto a board around the card.</p>
+    <button id="start" class="primary">Start phone camera</button>
+  </section>
+
+  <div id="hud" class="hint hud hidden"></div>
+  <div id="hint" class="hint bottom hidden">Point the camera at a card</div>
+
+  <nav id="actions" class="hidden">
+    <button data-action="attack">Attack</button>
+    <button data-anim="Flap">Flap</button>
+    <button data-anim="Walk">Walk</button>
+    <button data-action="end-turn">End turn</button>
+  </nav>
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="quest.js"></script>
+</body>
+</html>

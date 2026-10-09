@@ -1,0 +1,117 @@
+{
+  "id": "mana-clash",
+  "name": "Mana Clash",
+  "version": 1,
+  "defaultModel": "../../assets/dragon_whelp.glb",
+  "targets": "targets.mind",
+  "board": {
+    "width": 0.7,
+    "depth": 0.24,
+    "theme": {
+      "fill": [
+        "#2c1838",
+        "#140a1c"
+      ],
+      "edge": "#c0c8d8",
+      "kinds": {
+        "battlefield": "#b48cff"
+      }
+    },
+    "zones": [
+      {
+        "id": "B1",
+        "kind": "battlefield",
+        "x": -0.255,
+        "z": -0.04
+      },
+      {
+        "id": "B2",
+        "kind": "battlefield",
+        "x": -0.17,
+        "z": -0.04
+      },
+      {
+        "id": "B3",
+        "kind": "battlefield",
+        "x": -0.085,
+        "z": -0.04
+      },
+      {
+        "id": "B4",
+        "kind": "battlefield",
+        "x": 0.0,
+        "z": -0.04
+      },
+      {
+        "id": "B5",
+        "kind": "battlefield",
+        "x": 0.085,
+        "z": -0.04
+      },
+      {
+        "id": "B6",
+        "kind": "battlefield",
+        "x": 0.17,
+        "z": -0.04
+      },
+      {
+        "id": "B7",
+        "kind": "battlefield",
+        "x": 0.255,
+        "z": -0.04
+      }
+    ]
+  },
+  "cardFields": {
+    "cost": {
+      "label": "Cost"
+    },
+    "power": {
+      "types": [
+        "creature"
+      ],
+      "label": "Power"
+    },
+    "toughness": {
+      "types": [
+        "creature"
+      ],
+      "label": "Toughness"
+    }
+  },
+  "rules": {
+    "life": {
+      "name": "Life",
+      "starting": 20
+    },
+    "deck": {
+      "startingHand": 4,
+      "drawPerTurn": 1
+    },
+    "resources": {
+      "name": "mana",
+      "costStat": "cost",
+      "mode": "ramp",
+      "max": 10
+    },
+    "zones": {
+      "battlefield": {
+        "accepts": [
+          "creature"
+        ]
+      }
+    },
+    "summoningSickness": true
+  },
+  "cardStyle": {
+    "frame": "#c0c8d8",
+    "bg": "#1e1430",
+    "typeLine": "Creature - Dragon",
+    "statLine": "{power} / {toughness}",
+    "gemsStat": "cost",
+    "gemColor": "#8c6cff"
+  },
+  "creatureTypes": [
+    "creature"
+  ]
+}

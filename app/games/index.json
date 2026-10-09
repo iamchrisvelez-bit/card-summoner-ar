@@ -1,0 +1,19 @@
+{
+  "games": [
+    {
+      "id": "yugioh",
+      "name": "Yu-Gi-Oh!",
+      "summary": "Master Rule board (5 Main Monster, 2 Extra Monster, 5 Spell/Trap, Field zones), 8000 LP, one Normal Summon per turn, Level 5-6 needs 1 tribute and 7+ needs 2, no attacks on the first turn."
+    },
+    {
+      "id": "zone-duel",
+      "name": "Zone Duel (demo cards)",
+      "summary": "Anime-style duel: 5 monster zones, 8000 LP, one normal summon per turn, high-level monsters need tributes."
+    },
+    {
+      "id": "mana-clash",
+      "name": "Mana Clash",
+      "summary": "Mana-curve battler: free battlefield, 20 life, mana grows each turn, creatures can't attack the turn they arrive."
+    }
+  ]
+}

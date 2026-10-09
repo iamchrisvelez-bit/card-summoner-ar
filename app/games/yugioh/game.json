@@ -1,0 +1,251 @@
+{
+  "id": "yugioh",
+  "name": "Yu-Gi-Oh!",
+  "version": 1,
+  "source": "Card data hand-entered from public card databases; refresh with tools/import_ygoprodeck.py. Card art is not bundled.",
+  "defaultModel": "../../assets/dragon_whelp.glb",
+  "targets": null,
+  "board": {
+    "width": 0.74,
+    "depth": 0.46,
+    "theme": {
+      "fill": [
+        "#101c3a",
+        "#070d1c"
+      ],
+      "edge": "#c9a227",
+      "kinds": {
+        "monster": "#ff9b5c",
+        "extra-monster": "#ffd86b",
+        "spell-trap": "#3fd0a4",
+        "field": "#7bd36b",
+        "graveyard": "#8a8fa0",
+        "extra-deck": "#a678ff",
+        "deck": "#8a8fa0"
+      }
+    },
+    "zones": [
+      {
+        "id": "EMZ-L",
+        "kind": "extra-monster",
+        "x": -0.1,
+        "z": -0.175
+      },
+      {
+        "id": "EMZ-R",
+        "kind": "extra-monster",
+        "x": 0.1,
+        "z": -0.175
+      },
+      {
+        "id": "MMZ1",
+        "kind": "monster",
+        "x": -0.2,
+        "z": -0.06
+      },
+      {
+        "id": "MMZ2",
+        "kind": "monster",
+        "x": -0.1,
+        "z": -0.06
+      },
+      {
+        "id": "MMZ3",
+        "kind": "monster",
+        "x": 0.0,
+        "z": -0.06
+      },
+      {
+        "id": "MMZ4",
+        "kind": "monster",
+        "x": 0.1,
+        "z": -0.06
+      },
+      {
+        "id": "MMZ5",
+        "kind": "monster",
+        "x": 0.2,
+        "z": -0.06
+      },
+      {
+        "id": "ST1",
+        "kind": "spell-trap",
+        "x": -0.2,
+        "z": 0.055
+      },
+      {
+        "id": "ST2",
+        "kind": "spell-trap",
+        "x": -0.1,
+        "z": 0.055
+      },
+      {
+        "id": "ST3",
+        "kind": "spell-trap",
+        "x": 0.0,
+        "z": 0.055
+      },
+      {
+        "id": "ST4",
+        "kind": "spell-trap",
+        "x": 0.1,
+        "z": 0.055
+      },
+      {
+        "id": "ST5",
+        "kind": "spell-trap",
+        "x": 0.2,
+        "z": 0.055
+      },
+      {
+        "id": "FIELD",
+        "kind": "field",
+        "x": -0.3,
+        "z": -0.06
+      },
+      {
+        "id": "GY",
+        "kind": "graveyard",
+        "x": 0.3,
+        "z": -0.06
+      },
+      {
+        "id": "EXTRA",
+        "kind": "extra-deck",
+        "x": -0.3,
+        "z": 0.055
+      },
+      {
+        "id": "DECK",
+        "kind": "deck",
+        "x": 0.3,
+        "z": 0.055
+      }
+    ]
+  },
+  "cardFields": {
+    "passcode": {
+      "label": "Passcode"
+    },
+    "level": {
+      "types": [
+        "monster",
+        "extra-monster"
+      ],
+      "label": "Level"
+    },
+    "atk": {
+      "types": [
+        "monster",
+        "extra-monster"
+      ],
+      "label": "ATK"
+    },
+    "def": {
+      "types": [
+        "monster",
+        "extra-monster"
+      ],
+      "label": "DEF"
+    },
+    "attribute": {
+      "types": [
+        "monster",
+        "extra-monster"
+      ],
+      "label": "Attribute"
+    },
+    "race": {
+      "label": "Type"
+    }
+  },
+  "rules": {
+    "life": {
+      "name": "LP",
+      "starting": 8000
+    },
+    "deck": {
+      "startingHand": 5,
+      "drawPerTurn": 1
+    },
+    "turn": {
+      "playsPerTurn": {
+        "monster": 1
+      },
+      "noAttackFirstTurn": true
+    },
+    "zones": {
+      "monster": {
+        "accepts": [
+          "monster",
+          "extra-monster"
+        ]
+      },
+      "extra-monster": {
+        "accepts": [
+          "extra-monster"
+        ]
+      },
+      "spell-trap": {
+        "accepts": [
+          "spell",
+          "trap"
+        ]
+      },
+      "field": {
+        "accepts": [
+          "field-spell"
+        ]
+      },
+      "graveyard": {
+        "accepts": []
+      },
+      "extra-deck": {
+        "accepts": []
+      },
+      "deck": {
+        "accepts": []
+      }
+    },
+    "summonCost": {
+      "tributes": {
+        "stat": "level",
+        "types": [
+          "monster"
+        ],
+        "from": [
+          "monster",
+          "extra-monster"
+        ],
+        "tiers": [
+          {
+            "min": 5,
+            "count": 1
+          },
+          {
+            "min": 7,
+            "count": 2
+          }
+        ]
+      }
+    },
+    "summoningSickness": false
+  },
+  "cardStyle": {
+    "frames": {
+      "normal": "#d9b45a",
+      "effect": "#c8743a",
+      "fusion": "#8c5cc4",
+      "spell": "#1f9e86",
+      "trap": "#b0457e"
+    },
+    "typeLine": "[{race}/{frameLabel}]",
+    "statLine": "ATK/{atk}  DEF/{def}",
+    "gemsStat": "level",
+    "gemColor": "#e0452b"
+  },
+  "creatureTypes": [
+    "monster",
+    "extra-monster"
+  ]
+}
